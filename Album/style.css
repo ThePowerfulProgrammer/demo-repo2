@@ -1,0 +1,82 @@
+
+/*
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+body {
+    background-color: #121212;
+}
+
+.navbar {
+    background-color: #141414;
+}
+
+.navbar-nav {
+    font-size: large;
+}
+
+
+.jumbotron {
+    text-align: center;
+    background-color: #dce0d9;
+}
+
+.jumbotron__container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.jumbotron h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
+.lead {
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.lead btn {
+    font-family: 'Oswald', sans-serif;
+}
+
+.row {
+    
+}
+
+.card {
+    background-color: #dce0d9;
+    border: 1px solid #188fa7;
+}
+
+.card h3 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: "Oswald" sans-serif;
+    color: black;
+
+}
+
+.card p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+}
+
+.card btn {
+    font-size: 2em;
+}
+
+.pt-2 {
+    font-size: 1rem;
+}
+
+.footer__contributions {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.footer__text {
+    font-family:'Barlow Condensed', sans-serif; 
+}
