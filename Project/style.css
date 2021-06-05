@@ -1,0 +1,45 @@
+/*Mike Kenneally */
+/*
+fonts: 
+font-family: 'Oswald', sans-serif;
+font-family: 'Stint Ultra Condensed', cursive;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    background-color: #1f1f1f;
+}
+
+.main {
+    width: 100%;
+    margin: 20rem 0;
+}
+
+.hero {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: .5rem;
+    font-size: 2.25rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+
+.hero p {
+    color: #f1fffa;
+}
+
+.hero button {
+    margin: 1rem 0;
+    font-size: 1em;
+}
+

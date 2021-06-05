@@ -1,0 +1,68 @@
+/*
+font-family: 'Lora', serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    background-color: #1F1F1F;
+}
+
+
+.main {
+    width: 100%;
+    margin: 20rem 0;
+}
+
+.hero {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: .5rem;
+    font-size: 2.25rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    
+}
+.hero p {
+    font-size: 1.125rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.hero h1, p {
+    color: #F1FFFA;
+}
+
+.hero button {
+    margin: 1rem 0;
+    font-size: 1.5em;
+}
+
+button:hover {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer {
+    color: #F1FFFA;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

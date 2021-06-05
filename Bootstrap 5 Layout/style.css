@@ -1,0 +1,152 @@
+/*colors:
+141414
+333333
+640A18
+fonts:
+font-family: 'Antonio', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #141414;
+    color: white;
+}
+
+.nav {
+    font-family: "Oswald", sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+.navbar-nav {
+    font-size: 1.125rem;
+}
+
+.nav-item {
+    color: black;
+}
+
+.nav-link:hover {
+    text-transform: uppercase;
+}
+
+.hero {
+    width: 100%;
+    background-color: #aaa;
+}
+
+.hero__banner {
+    width: 100%;
+    border: 2px solid #640A18;
+}
+
+.hero__banner img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+
+.main {
+    width: 100%;
+}
+
+.main__text {
+    width: 100%;
+    margin-top: .5rem;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.25rem;
+}
+
+.main__text h1 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 3rem;
+}
+
+.main__img {
+    width: 100%;
+}
+
+.main__img img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.secondary {
+    width: 100%;
+}
+
+.secondary__img {
+    width: 100%;
+}
+
+.secondary__img img {
+    width: 100%;
+}
+
+.secondary__text {
+    width: 100%;
+    margin-top: .5rem;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.25rem;
+}
+
+.Album__link {
+    text-decoration: none;  
+    text-transform: none;
+    font-size: 2rem;
+    color: #640A18;  
+}
+
+
+@media (min-width: 800px) {
+    .hero__banner img {
+        max-height: 1000px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main__text {
+        width: 40%;
+        text-align: center;
+        font-size: 1.75rem;
+        margin: 1rem auto;
+    }
+
+    .main__img {
+        width: 40%;
+        margin: 1rem auto;
+        margin-bottom: 0;
+    }
+
+    .secondary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secondary__img {
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+       
+    }
+
+    .secondary__text {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 1.75rem;
+    }
+}

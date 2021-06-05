@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Oswald:wght@550&display=swap" rel="stylesheet">
+
+    <title>JS Page</title>
+  </head>
+
+  <body>
+      <!-- alert that changes content -->
+      <div>
+        <p id="window_alert">Player 1: Click </p>
+      </div>
+
+      <!-- Call data from an array -->
+      <ul id="pokemonTypes">
+
+      </ul>
+
+      <!-- Reveal hidden -->
+      <button onclick="RevealMessage()" id="revealButton" style="margin-top: .75rem;">Click me</button>
+      <div id="Reveal" style="display: none;"><p>This was hidden data</p></div>
+
+
+      <!-- add data/html to existing tag -->
+      <p id="addedData" style="margin-top: .75rem;">The following was added with</p>
+
+      <!-- Conditional -->
+      <p id="Payment" style="margin-top: .75rem; margin-bottom: .75rem;">Total payment  $</p>
+
+      <!-- If else if -->
+      <label for="pokemon" >Select pokemon</label>
+      <select id="pokemon">
+          <option value="">-- Make a choice --</option>
+          <option value="fire">fire</option>
+          <option value="water">water</option>
+          <option value="grass">grass</option>
+      </select>
+
+      <p id="pokemonSelector"></p>
+
+      <!-- Window alert -->
+      <button type="button" id="alert" onclick="windowAlert()">Click me</button>
+
+      <!-- Image changer -->
+      <img src="images/img-01.jpg" alt="" style="display: block;">
+
+    <script src="index.js"> </script>
+
+
+  </body>
+</html>
