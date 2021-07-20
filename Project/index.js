@@ -11,7 +11,5 @@ myAlert.addEventListener('click', UpdateUser);
 function UpdateUser() {
     let name = prompt("Enter your name: ");
     myAlert.textContent = "Welcome " + name
-    if (myAlert.textContent === 'null') {
-        myAlert.textContent = 'Ashish';
-    }
+    
 }

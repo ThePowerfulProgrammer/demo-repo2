@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/main.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Oswald:wght@550&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
     <title>JS Page</title>
   </head>
 
   <body>
+    <header id="top" style="text-align: center;">
+      Top
+    </header>
       <!-- alert that changes content -->
       <div>
         <p id="window_alert">Player 1: Click </p>
@@ -37,7 +41,7 @@
       <p id="Payment" style="margin-top: .75rem; margin-bottom: .75rem;">Total payment  $</p>
 
       <!-- If else if -->
-      <label for="pokemon" >Select pokemon</label>
+      <label for="pokemon" class="pokemonContainer">Select pokemon</label>
       <select id="pokemon">
           <option value="">-- Make a choice --</option>
           <option value="fire">fire</option>
@@ -51,7 +55,85 @@
       <button type="button" id="alert" onclick="windowAlert()">Click me</button>
 
       <!-- Image changer -->
+      <div id="Image_container" class="test">
       <img src="images/img-01.jpg" alt="" style="display: block;">
+      </div>
+
+      
+      <div id="cardContainer">
+        <div id="Cards">
+          
+
+        </div>
+      </div>
+
+      <button id="counter" class="counter">Counter: </button>
+      <div>
+        <h1 style="text-transform: uppercase;">Lorem ipsum dolor sit amet.</h1>
+        <p style="text-transform: capitalize; margin-bottom: 2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Commodi eos nemo est corporis dolorem ullam exercitationem laborum minus aliquam ad, 
+           quidem facere consectetur id pariatur? Similique nesciunt aliquid vitae,
+            laudantium provident eius quia asperiores autem blanditiis placeat distinctio enim aliquam voluptatem vero, 
+            est deleniti necessitatibus! Aliquam amet quaerat explicabo sunt ipsa eveniet perferendis earum eum. 
+            Omnis veniam est corrupti necessitatibus consequatur provident ipsum impedit molestiae, 
+            ducimus veritatis aliquid, voluptates blanditiis incidunt quod iusto corporis laudantium 
+            accusantium expedita. Rerum unde dolore praesentium ut iusto molestiae vitae, enim vel, 
+            itaque nulla sint corporis dicta porro commodi explicabo, similique perspiciatis 
+            reiciendis harum exercitationem ipsam. Incidunt nulla a, accusamus laudantium nemo
+            soluta excepturi placeat, cupiditate necessitatibus quas blanditiis quaerat repudiandae sed dolores
+            voluptatibus, odio alias qui animi maxime ut possimus! In sed obcaecati, ducimus ipsam sit voluptatibus.
+            Reiciendis, iste tempora. Facilis hic nesciunt ipsam odit dicta deserunt ut consectetur adipisci voluptatibus architecto minus reiciendis provident aliquid aperiam, qui doloribus possimus quibusdam dolorum similique modi dignissimos quae laudantium atque praesentium? 
+            Cumque rem sit officiis autem soluta quod facilis iusto magni ad dolores ea ex distinctio voluptatibus magnam tempore, eveniet voluptatem praesentium aperiam? Quos ipsum iusto, recusandae corporis omnis magnam autem ullam perspiciatis, ex facere optio! Quibusdam laudantium suscipit molestias aliquid officia perspiciatis enim tenetur sunt, dolore debitis dolorum fuga omnis amet magnam vitae aperiam hic explicabo laborum. Dolorem ea distinctio 
+            rem tempora officia quisquam? Quasi, sed. Est rerum temporibus odit.
+            Aut esse ipsam similique blanditiis!
+        </p>
+        <p style="text-transform: capitalize; margin-bottom: 2rem;" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Commodi eos nemo est corporis dolorem ullam exercitationem laborum minus aliquam ad, 
+           quidem facere consectetur id pariatur? Similique nesciunt aliquid vitae,
+            laudantium provident eius quia asperiores autem blanditiis placeat distinctio enim aliquam voluptatem vero, 
+            est deleniti necessitatibus! Aliquam amet quaerat explicabo sunt ipsa eveniet perferendis earum eum. 
+            Omnis veniam est corrupti necessitatibus consequatur provident ipsum impedit molestiae, 
+            ducimus veritatis aliquid, voluptates blanditiis incidunt quod iusto corporis laudantium 
+            accusantium expedita. Rerum unde dolore praesentium ut iusto molestiae vitae, enim vel, 
+            itaque nulla sint corporis dicta porro commodi explicabo, similique perspiciatis 
+            reiciendis harum exercitationem ipsam. Incidunt nulla a, accusamus laudantium nemo
+            soluta excepturi placeat, cupiditate necessitatibus quas blanditiis quaerat repudiandae sed dolores
+            voluptatibus, odio alias qui animi maxime ut possimus! In sed obcaecati, ducimus ipsam sit voluptatibus.
+            Reiciendis, iste tempora. Facilis hic nesciunt ipsam odit dicta deserunt ut consectetur adipisci voluptatibus architecto minus reiciendis provident aliquid aperiam, qui doloribus possimus quibusdam dolorum similique modi dignissimos quae laudantium atque praesentium? 
+            Cumque rem sit officiis autem soluta quod facilis iusto magni ad dolores ea ex distinctio voluptatibus magnam tempore, eveniet voluptatem praesentium aperiam? Quos ipsum iusto, recusandae corporis omnis magnam autem ullam perspiciatis, ex facere optio! Quibusdam laudantium suscipit molestias aliquid officia perspiciatis enim tenetur sunt, dolore debitis dolorum fuga omnis amet magnam vitae aperiam hic explicabo laborum. Dolorem ea distinctio 
+            rem tempora officia quisquam? Quasi, sed. Est rerum temporibus odit.
+            Aut esse ipsam similique blanditiis!
+        </p>
+        <p style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Commodi eos nemo est corporis dolorem ullam exercitationem laborum minus aliquam ad, 
+           quidem facere consectetur id pariatur? Similique nesciunt aliquid vitae,
+            laudantium provident eius quia asperiores autem blanditiis placeat distinctio enim aliquam voluptatem vero, 
+            est deleniti necessitatibus! Aliquam amet quaerat explicabo sunt ipsa eveniet perferendis earum eum. 
+            Omnis veniam est corrupti necessitatibus consequatur provident ipsum impedit molestiae, 
+            ducimus veritatis aliquid, voluptates blanditiis incidunt quod iusto corporis laudantium 
+            accusantium expedita. Rerum unde dolore praesentium ut iusto molestiae vitae, enim vel, 
+            itaque nulla sint corporis dicta porro commodi explicabo, similique perspiciatis 
+            reiciendis harum exercitationem ipsam. Incidunt nulla a, accusamus laudantium nemo
+            soluta excepturi placeat, cupiditate necessitatibus quas blanditiis quaerat repudiandae sed dolores
+            voluptatibus, odio alias qui animi maxime ut possimus! In sed obcaecati, ducimus ipsam sit voluptatibus.
+            Reiciendis, iste tempora. Facilis hic nesciunt ipsam odit dicta deserunt ut consectetur adipisci voluptatibus architecto minus reiciendis provident aliquid aperiam, qui doloribus possimus quibusdam dolorum similique modi dignissimos quae laudantium atque praesentium? 
+            Cumque rem sit officiis autem soluta quod facilis iusto magni ad dolores ea ex distinctio voluptatibus magnam tempore, eveniet voluptatem praesentium aperiam? Quos ipsum iusto, recusandae corporis omnis magnam autem ullam perspiciatis, ex facere optio! Quibusdam laudantium suscipit molestias aliquid officia perspiciatis enim tenetur sunt, dolore debitis dolorum fuga omnis amet magnam vitae aperiam hic explicabo laborum. Dolorem ea distinctio 
+            rem tempora officia quisquam? Quasi, sed. Est rerum temporibus odit.
+            Aut esse ipsam similique blanditiis!
+        </p>
+
+      </div>
+      <a href="#" id="back-to-top">Top</a>
+
+    <div class="container" style="display: block; margin: 2rem 0;">
+      <form action="">
+        <label for="country">Please enter your country</label>
+        <input type="text" id="country" name="country" placeholder="Type here: ">
+  
+      </form>
+      <ul id="autocomplete-results"></ul>
+    </div>      
+    <p id="date"></p>
 
     <script src="index.js"> </script>
 

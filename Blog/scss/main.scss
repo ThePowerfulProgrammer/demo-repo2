@@ -1,0 +1,24 @@
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Big Shoulders Stencil Display', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+$card-title: 'Oswald', sans-serif;
+$card-body: 'Big Shoulders Display', cursive;
+$card-btn: 'Roboto Condensed', sans-serif;
+
+.card-title {
+    font-family: $card-title;
+    font-size: 3rem;
+}
+.card-body {
+    font-family: $card-body;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    font-family: $card-btn;
+    font-size: 1rem;
+}

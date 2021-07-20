@@ -1,0 +1,111 @@
+// vars
+//font-family: 'Stint Ultra Condensed', cursive;
+$centerObj: 0 auto;
+$fontWeights: ("main": 300, "secondary": 400, "Bold": 700);
+$fonts: 'Stint Ultra Condensed', cursive;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightslategray;
+    color: black;
+    text-align: center;
+    font-weight: map-get($fontWeights, Bold);
+    font-family: $fonts;
+    font-size: 2rem;
+}
+
+#window_alert {
+    margin-top: 1rem;
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid rgba(0,0,200,0.6);
+    background: rgba(0,0,200,0.3);
+    color: rgba(0,0,200,0.6);
+    box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+
+    li {
+        font-size: 2rem;
+    }
+}
+
+
+.test {
+    margin: $centerObj;
+}
+
+img {
+    margin: $centerObj;
+}
+
+.pokemonContainer {
+    border: 2px solid rgba(125, 255, 49, 0.822);
+
+    select {
+        border: 2px solid rgba(0,0,200,0.6);
+        option {       
+            color: salmon;
+        }
+    }
+}
+
+.myButton {
+    padding: .5rem 1rem;
+    margin: 2rem;
+    border: 2px solid black;
+    background-color: rgba(224, 144, 14, 0.5);
+
+}
+
+.counter {
+    border-radius: 50%;
+    padding: .5rem;
+    border: 2px solid black;
+    background-color: rgba(129, 0, 250, 0.5);
+    margin-bottom: 2rem;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    background-color: rgba(255,255,255,.9);
+    color: #313943;
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 2em 0 rgba(0,0,0,.25);
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 1.75em;
+
+    
+}
+
+#back-to-top:hover {
+    background-color: #fff;
+    padding: 1em 3em;
+}
+
+#back-to-top.visible{
+    opacity: 1;
+}

@@ -1,0 +1,15 @@
+//vars
+$mainColor: rgb(255, 149, 50); 
+$mainFont: 'Stint Ultra Condensed', cursive;
+
+
+body {
+    background-color: white;
+    font-family: $mainFont;
+    font-size: 2rem;
+}
+
+.list-item {
+    color: $mainColor;
+}
+

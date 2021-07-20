@@ -1,0 +1,32 @@
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Big Shoulders Stencil Display', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+.Interests {
+  list-style-type: none;
+}
+
+.display {
+  font-family: 'Oswald', sans-serif;
+}
+
+.lead {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Quote {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: brown;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+}
+
+.Interest {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/*# sourceMappingURL=aboutms.css.map */

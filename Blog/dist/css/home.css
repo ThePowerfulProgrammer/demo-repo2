@@ -1,0 +1,32 @@
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Big Shoulders Stencil Display', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+body {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.btn {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.btn:hover {
+  opacity: .8;
+  font-family: 'Oswald', sans-serif;
+}
+
+.card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+}
+
+.card-text {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.inset {
+  border: 1px inset cyan;
+}
+/*# sourceMappingURL=home.css.map */
