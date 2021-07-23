@@ -1,0 +1,2 @@
+A Django view is just a Python function that receives a web request and returns a web response. 
+We’re going to use class-based views then map URLs for each view and create an HTML templated for the data returned from the views.
