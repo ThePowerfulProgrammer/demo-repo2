@@ -3,3 +3,21 @@ We’re going to use class-based views then map URLs for each view and create an
 
 
 Difference between App_name/template and App_name:function_name
+
+
+Authenticate
+authentication verifies a user is who they claim to be, and authorization determines what an authenticated user is allowed to do. 
+
+>>> from django.contrib.auth.models import User
+>>> user = User.objects.create_user('john', 'lennon@thebeatles.com', 'johnpassword')
+
+# At this point, user is a User object that has already been saved
+# to the database. You can continue to change its attributes
+# if you want to change other fields.
+>>> user.last_name = 'Lennon'
+>>> user.save()
+
+>>> from django.contrib.auth.models import User
+>>> u = User.objects.get(username='john')
+>>> u.set_password('new password')
+>>> u.save()
