@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JS Page</title>
+  </head>
+
+  <body>   
+
+      <form style="margin-top: 2rem; margin-bottom: 2rem;">
+          <input type="text" autofocus id="name" placeholder="Name">
+          <input type="submit" name="Submit">
+      </form>
+
+      <h1 id="hello" style="margin: 1rem 0 ;">Hello</h1>
+      <select>
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+      </select>
+
+
+      <h1>Tasks</h1>
+      <ul id="tasks">
+
+      </ul>
+      <form  style="margin-top: 1rem;" class="form">
+        <input type="text" placeholder="New task" id="task">
+        <input type="submit" id="submit">
+      </form>
+
+
+
+
+    <script>
+        document.querySelector('form').onsubmit = function() {
+            const name = document.querySelector("#name").value;
+            alert(`Hello, ${name}`);
+        } 
+        
+        document.querySelector('select').onchange = function() {
+            // this refers to thing that receives the event
+            document.querySelector("#hello").style.color = this.value;
+        }
+
+        // default submit button is disabled
+        document.querySelector("#submit").disabled = true;
+
+        document.querySelector('#task').onkeyup = () => {
+            if (document.querySelector("#task").value.length > 0) {
+            document.querySelector("#submit").disabled = false;
+        } else {
+            document.querySelector("#submit").disabled = true;
+        }
+        }
+
+        document.querySelector('.form').onsubmit = () => {
+            const task = document.querySelector("#task").value;
+
+            const li = document.createElement('li');
+            li.innerHTML = task;
+
+            document.querySelector("#tasks").append(li);
+            document.querySelector('#task').value = '';
+            document.querySelector("#submit").disabled = true;
+            // Stop form from submitting
+            return false;
+        }
+        
+    </script>
+
+  </body>
+</html>

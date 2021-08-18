@@ -7,10 +7,10 @@ function Banner() {
     // array destructuring, useState()
     //     var,     function()
 
-    const [message, setMessage] = React.useState("Straight from the mind of a once struggling developer")
+    const [message, setMessage] = React.useState("Straight from the mind of a once struggling developer".toLowerCase())
 
     function handleClick() {
-        setMessage("Straight from the mind of a STILL struggling developer")
+        setMessage("Straight from the mind of a STILL struggling developer".toUpperCase())
     }
 
     // use data from a json file                             cardImg === cardImg in ContactCard, data.cardImg === key in data.js

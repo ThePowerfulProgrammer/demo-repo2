@@ -17,7 +17,7 @@ function Navbar() {
 
                 <div className="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav  ms-auto">
-                        <li className="nav-item"><a className="nav-link active" href="blog.html">Blog</a></li>
+                        <li className="nav-item"><a className="nav-link active" href="">Test page</a></li>
                         <li className="nav-item"><a className="nav-link">Sign In</a></li>
                         <li className="nav-item"><a className="nav-link">Contact</a></li>
                     </ul>

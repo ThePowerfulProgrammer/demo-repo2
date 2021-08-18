@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-React</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+
+
+    <script type="text/babel">
+
+    function Game() {
+
+        const [state, setState] = React.useState({
+            num1: 1,
+            num2: 2,
+            score: 0,
+            response: ''
+        })
+
+        function updateResponse() {
+            setState({
+                ...state,
+                response: event.target.value
+            })
+        }
+
+        function inputKeyPress(event) {
+            if (event.key === "Enter") {
+                if (state.num1 + state.num2 === parseInt(state.response) ){ 
+                     // Right
+                    setState({
+                        ...state,
+                        num1: Math.ceil(Math.random() * 10),
+                        num2: Math.ceil(Math.random() * 10),
+                        score: state.score + 1,
+                        response: ''
+                    })
+                } else {
+                    setState({
+                        ...state,
+                        score: state.score - 1,
+                        response: ''
+                    })
+                }
+            }
+        }
+
+        if (state.score === 10) {
+            return (
+                <div>
+                    You WON
+                </div>
+            )
+        }
+
+        return (
+            <div>
+                <h1>{state.num1} + {state.num2}</h1>   
+                <input value={state.response} onChange={updateResponse} onKeyPress={inputKeyPress} autoFocus={true}/>
+                <p>Score is {state.score}</p>
+            </div>
+        )
+    }
+
+      
+
+    function Count() {
+        
+        const [count, setCount] = React.useState(0);
+
+        function updateCount() {
+            setCount(count + 1)
+        }
+
+        return (
+            <div>
+                <h2>{count}</h2>
+                <button onClick={updateCount}>Add</button>
+            </div>
+        )
+    }
+
+    function Greeting(props) {
+
+        return (
+            <div>
+                <h1>Hello Mr {props.name} {props.surname}</h1>    
+            </div>
+        )
+    }
+
+    class App extends React.Component {
+        constructor() {
+            super()
+            this.state = {
+                character: {}
+            }
+        }
+
+        // API Call Add to state using setState()
+        componentDidMount() {
+            this.setState({test:true})
+            this.setState({loading:true})
+            fetch('https://swapi.dev/api/people/1')
+            .then(response => response.json())
+            .then(data => {
+                this.setState({
+                    character: data,
+                    loading: false
+                })
+            })
+        }
+        
+
+        render() {
+            const starwars = this.state.loading ? "Loading....": this.state.character.name
+            console.log(this.state)
+            return (
+                <div>
+                    <h1>{starwars}</h1>
+                </div>
+            )
+        }
+    }
+
+
+    ReactDOM.render(
+        <div>
+            <App />
+            <br/>
+            <br/>
+            <Count/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Greeting name="Ashish" surname="Ramnath"/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Game />
+        </div>, 
+            document.getElementById('root')
+            );
+    </script>
+</body>
+</html>

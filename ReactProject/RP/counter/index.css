@@ -1,0 +1,46 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'STIX Two Text', serif;
+             'Roboto Condensed', sans-serif;   
+*/
+
+
+.banner {
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+}
+
+.container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    font-family: 'STIX Two Text', serif;
+}
+
+button {
+    margin: 1rem .5rem;
+}
+
+#box-1 {
+    background-color: rgb(248, 235, 212);
+}
+#box-2 {
+    background-color: brown;
+    color: white;
+}
+
+#box-2 p,h2 {
+    margin: 1rem;
+}
+
+#myBlock {
+    display: none;
+    margin: 0 auto;
+}
+
+#myBlock h2,p {
+    margin: 2rem;
+}
+

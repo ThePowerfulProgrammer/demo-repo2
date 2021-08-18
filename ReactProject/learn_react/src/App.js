@@ -2,7 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import './styles/ToDo.css';
 import ToDo from './componets/ToDo';
+import Bio from './componets/Bio';
 import todosData from './componets/todos';
+import biodata from './componets/myBioData';
+import React from 'react';
 
 
 
@@ -28,29 +31,57 @@ import todosData from './componets/todos';
   );
 }*/
 
-function App(){
-  //Js goes here
-  const todo = todosData.map(data => <ToDo key={data.id} text={data.text}/>)
 
-  return (
-    //template goes here
-    /* a goes above todo-list
-      <div className="App">
-        <header className="App-header">
-          <h1>Hello world</h1>
-        </header>
-      </div>
-    */
-   
-    <div>
+
+class App extends React.Component {
+  /*
+    The state object is where you store property values that belongs to the component.
+
+    When the state object changes, the component re-renders
+  */ 
+  constructor() {
+    super()
+    this.state = {
+      todos: todosData,
       
-      <div className="todo-list">
-        {todo}
-      </div>
+    } 
+    this.handleChange = this.handleChange.bind(this)
+  }
 
-    </div>
-  )
+  handleChange(id) {
+    this.setState(Prevstate => {
+       const updateTodos = Prevstate.todos.map(todo => {
+         if (todo.id === id ) {
+           todo.completed = !todo.completed
+         }
+         return todo
+       })
+       return {
+         todos: updateTodos
+       }
+    })
+  }
+   
+
+
+  render () {
+    const todo = this.state.todos.map(data => <ToDo key={data.id} text={data.text} handleChange={this.handleChange}/>)
+    const bio = biodata.map(data => <Bio  key={data.id} name={data.name} surname={data.surname} age={data.age}/>)
+    return (
+          <div>            
+            <div className="todo-list mb-5">
+              {todo}
+              
+            </div>
+            {bio}
+          
+            
+
+          </div>
+      )
+
+    }
 }
 
-
+ 
 export default App;

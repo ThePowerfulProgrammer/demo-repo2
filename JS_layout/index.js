@@ -264,3 +264,40 @@ new_date = Date();
 data_p = document.getElementById("date");
 data_p.innerHTML += new_date;
 
+
+
+
+function hello() {
+    const name = 'Ash'
+    alert(`Hello World ${name}`)
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
