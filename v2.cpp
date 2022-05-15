@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// working -- > shows each flights travel time
+// working -- > shows each flights travel time.
 void flightTimes(float departures[], float arrivals[]) {
     cout << "The available travel times for flights are: " << endl ;
     cout << "\tDepart \t Arrive" << endl ;
